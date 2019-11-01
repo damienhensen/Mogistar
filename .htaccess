@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # REMOVE .html / .php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+    # MAIN PAGE
+    DirectoryIndex vandaag.html vandaag.php home.html home.php index.html index.php
+
+    # SHOW IF DOCUMENT DOESNT EXIST
+    ErrorDocument 404 /404.php
+</IfModule>
