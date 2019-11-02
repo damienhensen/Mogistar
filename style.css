@@ -195,6 +195,7 @@ nav .link-text {
 .content__vandaag .cijfers-info {
   display: grid;
   grid-template-columns: auto auto;
+  min-width: 19.4vw;
 }
 
 .content__vandaag .cijfers-info .laatste-cijfer {
@@ -225,11 +226,47 @@ nav .link-text {
   grid-row: 3;
 }
 
-.content__vandaag .cijfers-info .week-overzicht span {
+.actuele-week-overzicht-item,
+.actuele-dag-overzicht-item {
+  display: none;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 0 1.65em .5em;
+  width: 100%;
+}
+
+.actuele-dag-overzicht-item {
+  position: relative;
+  left: -6.5em;
+  padding: 0 3.25em .5em;
+}
+
+.actuele-dag-overzicht-item:first-of-type {
+  top: 3.5em;
+}
+
+.content__vandaag .actuele-week-overzicht .actuele-week-overzicht-vak, 
+.content__vandaag .actuele-week-overzicht .actuele-week-overzicht-cijfer,
+.content__vandaag .actuele-week-overzicht .actuele-dag-overzicht-vak, 
+.content__vandaag .actuele-week-overzicht .actuele-dag-overzicht-cijfer{
+  padding: 0 2em;
+}
+
+.content__vandaag .cijfers-info .week-overzicht span,
+.content__vandaag .cijfers-info .dag-overzicht span,
+.back_button {
   cursor: pointer;
 }
 
-.vandaag-info {
+.back_button {
+  display: none;
+  font-size: 3em;
+  width: max-content;
+  position: relative;
+  top: 0;
+}
+
+.content__vandaag .vandaag-info {
   position: relative;
   top: -1em;
   max-height: 88.3%;

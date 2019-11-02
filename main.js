@@ -36,3 +36,28 @@ function berekenEind(vak) {
 for (let i = 0; i < document.querySelectorAll('.cijfer__vak').length; i++) {
     berekenEind(document.querySelectorAll('.cijfer__vak')[i].textContent.toLowerCase());
 }
+
+// Laatste cijfers
+console.log(document.getElementsByClassName('dag__knop')[0]);
+
+document.getElementsByClassName('dag__knop')[0].onclick = ()=>{
+    document.getElementsByClassName('actuele-dag-overzicht-item')[0].style.display = 'flex';
+    document.getElementsByClassName('back_button')[0].style.display = 'block';
+    document.getElementsByClassName('laatste-cijfer')[0].style.display = 'none';
+    document.getElementsByClassName('week-en-dag-overzicht')[0].style.display = 'none';
+}
+
+document.getElementsByClassName('week-overzicht')[0].onclick = ()=>{
+    document.getElementsByClassName('actuele-week-overzicht-item')[0].style.display = 'flex';
+    document.getElementsByClassName('back_button')[0].style.display = 'block';
+    document.getElementsByClassName('laatste-cijfer')[0].style.display = 'none';
+    document.getElementsByClassName('week-en-dag-overzicht')[0].style.display = 'none';
+}
+
+document.getElementsByClassName('back_button')[0].onclick = ()=>{
+    document.getElementsByClassName('laatste-cijfer')[0].style.display = 'initial';
+    document.getElementsByClassName('week-en-dag-overzicht')[0].style.display = 'grid';
+    document.getElementsByClassName('actuele-week-overzicht-item')[0].style.display = 'none';
+    document.getElementsByClassName('actuele-dag-overzicht-item')[0].style.display = 'none';
+    document.getElementsByClassName('back_button')[0].style.display = 'none';
+}

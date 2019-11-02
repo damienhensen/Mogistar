@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mogistar</title>
     <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
 </head>
 
 <body class="index">
@@ -49,8 +50,29 @@
                         <div class="laatste-cijfer_les">Engels</div>
                     </div>
                     <div class="week-en-dag-overzicht">
-                        <div class="dag-overzicht"><span>0 vandaag</span></div>
-                        <div class="week-overzicht"><span>1 deze week &#9654;</span></div>
+                        <div class="dag-overzicht"><span class="dag__knop">1 vandaag &#9654;</span></div>
+                        <div class="week-overzicht"><span class="week__knop">1 deze week &#9654;</span></div>
+                    </div>
+                    <div class="actuele-week-overzicht">
+                        <span class="back_button">&lt;</span>
+                        <div class="actuele-week-overzicht-item">
+                            <div class="actuele-week-overzicht-vak">
+                                <span>Engels</span>
+                            </div>
+                            <div class="actuele-week-overzicht-cijfer">
+                                <span>10</span>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="actuele-dag-overzicht">
+                        <div class="actuele-dag-overzicht-item">
+                            <div class="actuele-dag-overzicht-vak">
+                                <span>Engels</span>
+                            </div>
+                            <div class="actuele-dag-overzicht-cijfer">
+                                <span>10</span>
+                            </div>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -119,7 +141,7 @@
                 <div class="titel"><span class="titel_text">Opdrachten</span></div>
                 <div class="opdrachten-info">
                     <div class="deadlines">
-                        <span>3 opdrachten met deadlines</span>
+                        <a href="opdrachten.html"><span>3 opdrachten met deadlines</span></a>
                     </div>
                 </div>
             </div>
