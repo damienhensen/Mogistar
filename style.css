@@ -319,35 +319,21 @@ nav .link-text {
   text-align: center;
 }
 
-.content__agenda .agenda__item .agenda__item-tijd {
-  border: 4px solid #3FBD6E;
-  margin: -4px;
-  padding: .6em 1em;
-}
-
-.content__agenda .agenda__item .agenda__item-les {
-  border: 4px solid #3FBD6E;
-  margin: -4px;
-  padding: .6em 1em;
-}
-
-.content__agenda .agenda__item .agenda__item-huiswerk {
+.content__agenda .agenda__item .agenda__item-tijd,
+.content__agenda .agenda__item .agenda__item-les,
+.content__agenda .agenda__item .agenda__item-huiswerk,
+.content__agenda .agenda__item .typeNietLeeg,
+.content__agenda .agenda__item .typeLeeg {
   border: 4px solid #3FBD6E;
   margin: -4px;
   padding: .6em 1em;
 }
 
 .content__agenda .agenda__item .typeNietLeeg {
-  border: 4px solid #3FBD6E;
-  margin: -4px;
-  padding: .6em 1em;
   background: red;
 }
 
 .content__agenda .agenda__item .typeLeeg {
-  border: 4px solid #3FBD6E;
-  margin: -4px;
-  padding: .6em 1em;
   background: none;
 }
 
@@ -434,3 +420,94 @@ nav .link-text {
   padding: .6em 1em;
   background: #FF0000;
 }
+
+.content__cijfers {
+  border: 4px solid #3FBD6E;
+  max-width: 80%;
+  max-height: 76.1vh;
+  background: #6BC359;
+}
+
+.content__cijfers .cijfers__items {
+  max-height: 68.2vh;
+}
+
+.cijfers__container {
+  max-width: 100%;
+}
+
+.content__cijfers .cijfers__titel {
+  background: #157E0E;
+  border: 4px solid #3FBD6E;
+  margin: -4px;
+  padding: 1em 1.6em;
+}
+
+.content__cijfers .cijfers__titel span {
+  font-size: 1.5em;
+}
+
+.content__cijfers .table {
+  max-width: 100%;
+  max-height: 89.6%;
+  overflow: auto;
+}
+
+.content__cijfers table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content__cijfers table td:nth-of-type(1) {
+  max-width: 40px;
+}
+
+.content__cijfers table td:nth-of-type(2),
+.content__cijfers table td:nth-of-type(3),
+.content__cijfers table td:nth-of-type(4),
+.content__cijfers table td:nth-of-type(5) {
+  cursor: default;
+  line-height: 2.5;
+  max-width: 100px;
+}
+
+.content__cijfers table thead {
+  background: #489239;
+}
+
+.content__cijfers table tbody {
+  background: #6BC359;
+}
+
+.content__cijfers table td {
+  padding: 1em;
+  border: 4px solid #3FBD6E;
+}
+
+.content__cijfers table td:first-of-type {
+  border-left: 0;
+}
+
+.content__cijfers table td:last-of-type {
+  border-right: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.content__cijfers .cijfers__cijfer:hover {
+  border: 1px solid green;
+  box-shadow: 0 0 5px green;
+  cursor: pointer;
+}
+
+.cijfers__cijfer {
+  padding: .5em;
+}
+
+.content__cijfers #cijfers__engelsCijferEind,
+.content__cijfers #cijfers__nederlandsCijferEind,
+.content__cijfers #cijfers__rekenenCijferEind {
+  cursor: default;
+}
+
+
