@@ -16,7 +16,7 @@ function berekenEind(vak) {
 
     // Zet alle cijfers in array
     for (let i = 1; i <= totaalAantalCijfers; i++) {
-        cijfersOmEindCijferTeMaken[i] = parseInt(document.getElementById('cijfers__' + vak + 'Cijfer'+i).innerHTML);
+        cijfersOmEindCijferTeMaken[i] = parseInt(document.getElementById('cijfers__' + vak + 'Cijfer' + i).innerHTML);
     }
 
     // Verwijder eerste waarde (undefined)
